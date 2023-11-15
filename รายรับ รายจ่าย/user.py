@@ -12,6 +12,7 @@ def login():
             messagebox.showinfo('ลงชื่อ','ลงทะเบียนสำเร็จแล้ว')
         
         except:
+            root.delete()
             messagebox.showinfo('ดาวน์โหลดล้มเหลว','โปรดทำในครั้งต่อไป')
     else:
             messagebox.showerror("การเข้าสู่ระบบล้มเหลว", "ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง")
